@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary brand color. -->
+    <color name="colorPrimary">#C20114</color>
+    <color name="colorPrimaryVariant">#C20114</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+
+    <!-- Secondary brand color. -->
+    <color name="colorSecondary">#C20114</color>
+    <color name="colorSecondaryVariant">#630710</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+
+    <color name="colorControlNormal">#FFEB3B</color>
+    <color name="colorControlActivated">#8BC34A</color>
+    <color name="colorControlHighlight">#C2B9BA</color>
+
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorOnSurface">#000000</color>
+
+    <color name="colorError">#FF0017</color>
+    <color name="colorOnError">#FFFFFF</color>
+
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorOnBackground">#000000</color>
+
+    <!-- Status bar color. -->
+    <color name="colorStatusBar">@color/colorPrimaryVariant</color>
+
+    <!-- Actionbar or Toolbar colors-->
+    <color name="colorToolbarBackground">@color/colorPrimary</color>
+    <color name="colorHamburgerIcon">@color/colorOnPrimary</color>
+    <color name="colorBackIcon">@color/colorOnPrimary</color>
+    <color name="colorToolbarTitle">@color/colorOnPrimary</color>
+    <color name="colorToolbarSubTitle">@color/colorOnPrimary</color>
+
+    <!-- Badge count text colors -->
+    <color name="badgeBorderColor">#FFFFFF</color>
+    <color name="badgeInsideColor">#FF0000</color>
+
+    <!-- System Navigation bar colors. -->
+    <color name="colorNavBarDivider">@color/colorPrimary</color>
+    <color name="colorNavBar">@color/colorPrimary</color>
+
+    <!-- ====================TextInputLayout & TextInputEditText colors========================= -->
+    <color name="boxBackgroundColor_TextInputLayout">#FFFFFF</color>
+
+    <color name="boxStrokeFocusedColor_TextInputLayout">#2196F3</color>
+    <color name="boxStrokeDisabledColor_TextInputLayout">#00FFB7</color>
+    <color name="boxStrokeNormalColor_TextInputLayout">#CCB409</color>
+
+    <color name="hintActiveColor_TextInputLayout">#ABA99B</color>
+    <color name="hintInactiveColor_TextInputLayout">#ABA99B</color>
+
+    <color name="placeholderColor_TextInputLayout">#4CAF50</color>
+
+    <color name="helperColor_TextInputLayout">#FF5722</color>
+
+    <color name="counterColor_TextInputLayout">#00BCD4</color>
+    <color name="counterOverflowColor_TextInputLayout">#000000</color>
+
+    <color name="prefixColor_TextInputLayout">#FFC107</color>
+    <color name="suffixColor_TextInputLayout">#565F00</color>
+
+    <color name="colorText_TextInputEditText">#000000</color>
+    <color name="colorHint_TextInputEditText">#ABA99B</color>
+
+    <color name="colorCursor">#000000</color>
+    <color name="colorCursorBubble">#000000</color>
+
+    <color name="colorEndIcon_TextInputLayout">#000000</color>
+    <color name="colorStartIcon_TextInputLayout">#673AB7</color>
+    <color name="colorPasswordToggle_TextInputLayout">#673AB7</color>
+    <!-- ==================================MaterialButton colors================================ -->
+    <color name="colorRedButton_Text">#FFFFFF</color>
+    <color name="colorRedButton_UnPressed">#C20114</color>
+    <color name="colorRedButton_Pressed">#630710</color>
+
+    <color name="colorRedButton_Outlined_Stroke">#C20114</color>
+    <color name="colorRedButton_Outlined_Text">#C20114</color>
+    <color name="colorRedButton_Outlined_UnPressed">#C20114</color>
+    <color name="colorRedButton_Outlined_Pressed">#C3C2C2</color>
+
+    <color name="colorGreenButton_Text">#FFFFFF</color>
+    <color name="colorGreenButton_UnPressed">#003E1F</color>
+    <color name="colorGreenButton_Pressed">#022313</color>
+
+    <color name="colorGreenButton_Outlined_Stroke">#003E1F</color>
+    <color name="colorGreenButton_Outlined_Text">#003E1F</color>
+    <color name="colorGreenButton_Outlined_UnPressed">#003E1F</color>
+    <color name="colorGreenButton_Outlined_Pressed">#C3C2C2</color>
+    <!-- =======================================PinView colors================================== -->
+    <color name="pin_view_text_hint_default">#FFFFFF</color>
+    <color name="pin_view_text_selected">#000000</color>
+    <color name="pin_view_text_focused">#ABA99B</color>
+    <color name="pin_view_text_default">#ABA99B</color>
+    <color name="pin_view_line_selected">#ABA99B</color>
+    <color name="pin_view_line_focused">#ABA99B</color>
+    <color name="pin_view_line_default">#ABA99B</color>
+    <!-- ================================BottomNavigation colors================================ -->
+    <color name="bottom_navigation_view_selected_color">#FF2850</color>
+    <color name="bottom_navigation_view_unselected_color">#FFFFFF</color>
+    <color name="bottom_navigation_view_background_color">#000000</color>
+    <!-- ======================================Common colors==================================== -->
+    <color name="colorLabel">#000000</color>
+    <color name="colorDesc">#ABA99B</color>
+    <color name="colorLink">#C20114</color>
+</resources>

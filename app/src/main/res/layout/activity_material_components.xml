@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/materialComponentsActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/contentConstraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/contentLinearLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@id/guidelineHorizontalBottom"
+                app:layout_constraintEnd_toEndOf="@id/guidelineVerticalEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineVerticalStart"
+                app:layout_constraintTop_toBottomOf="@id/guidelineHorizontalTop">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/textInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="TextInput" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/exposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="ExposedDropdownMenu" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/materialButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="MaterialButton" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/floatingActionButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="FloatingActionButton" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/materialRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="MaterialRadioButton" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/materialCheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="MaterialCheckBox" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/switchMaterial"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="SwitchMaterial" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/chip"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Chip" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/materialCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="MaterialCardView" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/bottomNavigationView"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="BottomNavigationView" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/bottomAppBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="BottomAppBar" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="TabLayout" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineHorizontalTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="8dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineHorizontalBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_end="8dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineVerticalStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="8dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineVerticalEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="8dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

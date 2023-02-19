@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/materialButtonActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/contentConstraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/contentLinearLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@id/guidelineHorizontalBottom"
+                app:layout_constraintEnd_toEndOf="@id/guidelineVerticalEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineVerticalStart"
+                app:layout_constraintTop_toBottomOf="@id/guidelineHorizontalTop">
+
+                <!--red buttons-->
+                <com.google.android.material.button.MaterialButton
+                    style="@style/SmallRoundedButton_Red"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:text="Login/Signup"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/RoundedButton_Red"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Login/Signup"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/SmallRoundedButton_Icon_Red"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Login/Signup Icon"
+                    app:iconGravity="end"
+                    app:icon="@drawable/ic_right_arrow_maroon"
+                    app:iconPadding="@dimen/_5sdp"
+                    app:iconTint="@null"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/RoundedButton_Icon_Red"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Login/Signup Icon"
+                    app:iconGravity="end"
+                    app:icon="@drawable/ic_right_arrow_maroon"
+                    app:iconPadding="@dimen/_5sdp"
+                    app:iconTint="@null"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/SmallRoundedButton_Outlined_Red"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Login/Signup"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/RoundedButton_Outlined_Red"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Login/Signup"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/SmallRoundedButton_Outlined_Icon_Red"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Login/Signup"
+                    app:iconGravity="end"
+                    app:icon="@drawable/ic_right_arrow_maroon"
+                    app:iconPadding="@dimen/_5sdp"
+                    app:iconTint="@null"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/RoundedButton_Outlined_Icon_Red"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Login/Signup"
+                    app:iconGravity="end"
+                    app:icon="@drawable/ic_right_arrow_maroon"
+                    app:iconPadding="@dimen/_5sdp"
+                    app:iconTint="@null"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/SmallRoundedButton_Icon_Red"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Call"
+                    app:iconGravity="textStart"
+                    app:icon="@drawable/ic_call_to"
+                    app:iconPadding="@dimen/_5sdp"
+                    app:iconTint="@color/white"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/SmallRoundedButton_Outlined_Icon_Red"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Message"
+                    app:iconGravity="textStart"
+                    app:icon="@drawable/ic_message_to"
+                    app:iconPadding="@dimen/_5sdp"
+                    app:iconTint="@color/black"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/RoundedButton_Icon_Red"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Call"
+                    app:iconGravity="textStart"
+                    app:icon="@drawable/ic_call_to"
+                    app:iconPadding="@dimen/_5sdp"
+                    app:iconTint="@color/white"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/RoundedButton_Outlined_Icon_Red"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Message"
+                    app:iconGravity="textStart"
+                    app:icon="@drawable/ic_message_to"
+                    app:iconPadding="@dimen/_5sdp"
+                    app:iconTint="@color/black"/>
+
+                <!--green buttons-->
+                <com.google.android.material.button.MaterialButton
+                    style="@style/SmallRoundedButton_Green"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:text="Login/Signup"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/RoundedButton_Green"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Login/Signup"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/SmallRoundedButton_Icon_Green"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Login/Signup Icon"
+                    app:iconGravity="end"
+                    app:icon="@drawable/ic_right_arrow_maroon"
+                    app:iconPadding="@dimen/_5sdp"
+                    app:iconTint="@null"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/RoundedButton_Icon_Green"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Login/Signup Icon"
+                    app:iconGravity="end"
+                    app:icon="@drawable/ic_right_arrow_maroon"
+                    app:iconPadding="@dimen/_5sdp"
+                    app:iconTint="@null"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/SmallRoundedButton_Outlined_Green"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Login/Signup"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/RoundedButton_Outlined_Green"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Login/Signup"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/SmallRoundedButton_Outlined_Icon_Green"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Login/Signup"
+                    app:iconGravity="end"
+                    app:icon="@drawable/ic_right_arrow_maroon"
+                    app:iconPadding="@dimen/_5sdp"
+                    app:iconTint="@null"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/RoundedButton_Outlined_Icon_Green"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Login/Signup"
+                    app:iconGravity="end"
+                    app:icon="@drawable/ic_right_arrow_maroon"
+                    app:iconPadding="@dimen/_5sdp"
+                    app:iconTint="@null"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/SmallRoundedButton_Icon_Green"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Call"
+                    app:iconGravity="textStart"
+                    app:icon="@drawable/ic_call_to"
+                    app:iconPadding="@dimen/_5sdp"
+                    app:iconTint="@color/white"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/SmallRoundedButton_Outlined_Icon_Green"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Message"
+                    app:iconGravity="textStart"
+                    app:icon="@drawable/ic_message_to"
+                    app:iconPadding="@dimen/_5sdp"
+                    app:iconTint="@color/black"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/RoundedButton_Icon_Green"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Call"
+                    app:iconGravity="textStart"
+                    app:icon="@drawable/ic_call_to"
+                    app:iconPadding="@dimen/_5sdp"
+                    app:iconTint="@color/white"/>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/RoundedButton_Outlined_Icon_Green"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Message"
+                    app:iconGravity="textStart"
+                    app:icon="@drawable/ic_message_to"
+                    app:iconPadding="@dimen/_5sdp"
+                    app:iconTint="@color/black"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Default Button" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Default Button" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    app:shapeAppearance="@style/cornerRounded_Button"
+                    android:text="Button Rounded %" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_40sdp"
+                    app:shapeAppearance="@style/cornerSmallRounded_Button"
+                    android:text="Button Small Rounded %" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Icon Button"
+                    app:icon="@drawable/ic_home" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customize Button"
+                    app:backgroundTint="@color/colorRedButton_UnPressed"
+                    app:cornerRadius="@dimen/_16sdp"
+                    app:icon="@drawable/ic_home"
+                    app:iconPadding="@dimen/_5sdp"
+                    app:iconTint="@color/white" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Unelevated Button" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    android:text="Rectangle Button"
+                    app:cornerRadius="0dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Outlined Button" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Outlined Icon Button"
+                    app:icon="@drawable/ic_home"
+                    app:iconGravity="textStart"
+                    app:iconPadding="@dimen/_10sdp" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Text Button" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Icon Text button"
+                    app:iconGravity="textStart"
+                    app:iconPadding="@dimen/_10sdp"
+                    app:icon="@drawable/ic_home" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineHorizontalTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="8dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineHorizontalBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_end="8dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineVerticalStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="8dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineVerticalEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="8dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
